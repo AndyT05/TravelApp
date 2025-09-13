@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router";
 import { cn } from "~/lib/utils";
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
-
+import { IntlBase } from "@syncfusion/ej2-base";
+import getActualDateTimeFormat = IntlBase.getActualDateTimeFormat;
 interface Props {
   title: string;
   description: string;
