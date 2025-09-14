@@ -16,6 +16,7 @@ export const loader = async () => {
 
 const AllUsers = ({ loaderData }: Route.ComponentProps) => {
   const { users } = loaderData;
+
   return (
     <main className="all-users wrapper">
       <Header
@@ -33,7 +34,7 @@ const AllUsers = ({ loaderData }: Route.ComponentProps) => {
             template={(props: UserData) => (
               <div className="flex items-center gap-1.5 px-4">
                 <img
-                  src={props.imageUrl || "/assets/images/andy.jpg"}
+                  src={props.imageUrl}
                   alt="user"
                   className="rounded-full size-8 aspect-square"
                   referrerPolicy="no-referrer"
@@ -91,5 +92,4 @@ const AllUsers = ({ loaderData }: Route.ComponentProps) => {
     </main>
   );
 };
-
 export default AllUsers;

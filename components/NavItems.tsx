@@ -12,9 +12,9 @@ const NavItems = ({ handleClick }: { handleClick?: () => void }) => {
 
   return (
     <section className="nav-items">
-      <Link to="/" className="link-logo">
+      <Link to="trips" className="link-logo">
         <img src="/assets/icons/logo.svg" alt="logo" className="size-[30px]" />
-        <h1>Let's go</h1>
+        <h1>TripVisor</h1>
       </Link>
 
       <div className="container">
@@ -39,6 +39,7 @@ const NavItems = ({ handleClick }: { handleClick?: () => void }) => {
             </NavLink>
           ))}
         </nav>
+
         <footer className="nav-footer">
           <img
             src={user?.imageUrl || "/assets/images/andy.jpg"}
